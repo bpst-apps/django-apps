@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="{% static 'css/app.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light"><strong>Welcome to eKart</strong></h1>
+            <p class="lead text-muted"><i>Your own online product store which host a million products across 500+
+                categories. Hurry limited time deals are on.</i></p>
+        </div>
+    </div>
+</section>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img alt="electronics"
+                         src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1501&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a class="btn btn-primary my-2" href="/electronics">Explore Electronics Category</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img alt="toys"
+                         src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a class="btn btn-primary my-2" href="/toys">Explore Toys Category</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img alt="shoes"
+                         src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a class="btn btn-primary my-2" href="/shoes">Explore Shoes Category</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

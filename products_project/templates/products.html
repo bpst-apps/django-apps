@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link href="{% static 'css/app.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light"><strong>{{ heading }}</strong></h1>
+        </div>
+    </div>
+</section>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    {% if product_type == 'electronics' %}
+                    <img alt="macbook"
+                         src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% elif product_type == 'toys' %}
+                    <img alt="remotecar"
+                         src="https://cdn.pixabay.com/photo/2022/06/27/05/55/toys-7286776_960_720.png"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% elif product_type == 'shoes' %}
+                    <img alt="reebok"
+                         src="https://images.unsplash.com/photo-1539874202413-c1f47b33169f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% else %}
+                    <img alt="notfound"
+                         src="https://cdn.pixabay.com/photo/2016/10/25/23/54/not-found-1770320_960_720.jpg"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% endif %}
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            {{ product_1 }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    {% if product_type == 'electronics' %}
+                    <img alt="dell"
+                         src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% elif product_type == 'toys' %}
+                    <img alt="drone"
+                         src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% elif product_type == 'shoes' %}
+                    <img alt="puma"
+                         src="https://images.unsplash.com/photo-1589562481113-10555af3f69d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% else %}
+                    <img alt="notfound"
+                         src="https://cdn.pixabay.com/photo/2016/10/25/23/54/not-found-1770320_960_720.jpg"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% endif %}
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            {{ product_2 }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    {% if product_type == 'electronics' %}
+                    <img alt="iphone"
+                         src="https://images.unsplash.com/photo-1664478546384-d57ffe74a78c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% elif product_type == 'toys' %}
+                    <img alt="bycycle"
+                         src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% elif product_type == 'shoes' %}
+                    <img alt="nike"
+                         src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% else %}
+                    <img alt="notfound"
+                         src="https://cdn.pixabay.com/photo/2016/10/25/23/54/not-found-1770320_960_720.jpg"
+                         style="width:100%"
+                         width="200" height="250"/>
+                    {% endif %}
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            {{ product_3 }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

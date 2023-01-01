@@ -1,0 +1,11 @@
+img {
+    height: 400px;
+    width: 400px;
+    border: 10px brown groove;
+    margin: 0% 20%
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}

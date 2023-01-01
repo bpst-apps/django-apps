@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="{% static 'css/emp.css' %}">
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <ol>
+        <li><strong>Employee Id</strong>: {{ id }} </li>
+        <li><strong>Employee Name</strong>: {{ name }} </li>
+        <li><strong>Employee Salary</strong>: {{ salary }} </li>
+    </ol>
+    <img src="{% static 'images/learning.jpg' %}" width="400" height="400"/>
+</body>
+</html>
