@@ -1,5 +1,3 @@
-# Django Applications
-
 # Django Project
 Django is a free and open-source web framework written in Python. It is designed to help developers take applications from concept to completion as quickly as possible. Django follows the model-template-view (MVT) architectural pattern. This means that it has three main components:
 1. **Models**: These are classes that define the structure of the data stored in your Django application. A model is a Python class that subclasses django.db.models.Model. It defines the fields of the object and the data type of each field.
