@@ -42,3 +42,11 @@ python manage.py startapp myapp
 ```
 
 This will create a new directory called "myapp" with the basic files and directories needed for a Django app.
+
+In Django, an "app" is a self-contained module that contains all the code and resources for a specific feature or functionality. A Django project can contain multiple apps, and each app can be used in multiple projects.
+
+Some examples of common apps in a Django project are:
+
+* A blog app that allows users to create and publish blog posts.
+* A forum app that allows users to participate in online discussions.
+* A shopping cart app that allows users to purchase products online.
