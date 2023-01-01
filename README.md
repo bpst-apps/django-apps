@@ -25,3 +25,11 @@ cd myproject
 python manage.py runserver
 ```
 This will start the development server at http://127.0.0.1:8000/. You can visit this URL in your web browser to view your Django project.
+
+To create a new app within your project, use the following command:
+
+```
+python manage.py startapp myapp
+```
+
+This will create a new directory called "myapp" with the basic files and directories needed for a Django app.
