@@ -13,3 +13,15 @@ pip install Django
 ```
 django-admin startproject myproject
 ```
+This will create a new directory called "myproject" with the basic files and directories needed for a Django project.
+
+3. Change into the project directory:
+```
+cd myproject
+```
+
+4. Run the development server:
+```
+python manage.py runserver
+```
+This will start the development server at http://127.0.0.1:8000/. You can visit this URL in your web browser to view your Django project.
