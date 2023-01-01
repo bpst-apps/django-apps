@@ -1,7 +1,16 @@
 # Django Applications
 
 # Django Project
-Django is a free and open-source web framework written in Python. It is designed to help developers take applications from concept to completion as quickly as possible. Django follows the model-template-view architectural pattern.
+Django is a free and open-source web framework written in Python. It is designed to help developers take applications from concept to completion as quickly as possible. Django follows the model-template-view (MVT) architectural pattern. This means that it has three main components:
+1. **Models**: These are classes that define the structure of the data stored in your Django application. A model is a Python class that subclasses django.db.models.Model. It defines the fields of the object and the data type of each field.
+2. **Templates**: These are HTML files that define the structure of the user interface. They contain placeholders for dynamic content, which is filled in by the view.
+3. **Views**: These are Python functions that handle requests from the user and return a response. A view is a Python function that takes a request and returns a response. It queries the models for the data needed to render the template, and then passes the data to the template to generate the final HTML response.
+
+In Django, the request-response cycle works as follows:
+1.  The user sends a request to the server.
+2.  The Django web server receives the request and routes it to the appropriate view function.
+3.  The view function queries the models for the necessary data and renders the template with the data.
+4.  The rendered template is sent back to the user as a response.
 
 To get started with a Django project, you'll need to install Django and set up a new project. Here are the steps you can follow:
 
