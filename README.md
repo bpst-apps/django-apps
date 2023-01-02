@@ -10,6 +10,11 @@ In Django, the request-response cycle works as follows:
 3.  The view function queries the models for the necessary data and renders the template with the data.
 4.  The rendered template is sent back to the user as a response.
 
+# Django MVT Architecture
+
+![MVT-Architecture](https://user-images.githubusercontent.com/103352460/210198146-f11bdd77-9ef0-4be9-84f7-a3ac0c26ff90.png)
+
+
 To get started with a Django project, you'll need to install Django and set up a new project. Here are the steps you can follow:
 
 1. Install Django:
