@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block 'body' %}
+<br><br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <strong>List of Projects</strong>
+        </div>
+        {% if project_list %}
+        <div class="card-body">
+            <div class="row mb-3 align-items-center">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                        <th scope="col">Assigned To</th>
+                        <th scope="col">Priority</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for project in project_list %}
+                    <tr>
+                        <th scope="row">{{forloop.counter}}</th>
+                        <td>{{ project.name }}</td>
+                        <td>{{ project.start_date }}</td>
+                        <td>{{ project.end_date }}</td>
+                        <td>{{ project.assigned_to }}</td>
+                        <td>{{ project.priority }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% else %}
+        <div class="card-footer text-muted">
+            No project exists, try to add new projects !!!
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

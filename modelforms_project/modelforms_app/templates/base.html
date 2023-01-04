@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+        .container {
+            padding: 50px 150px;
+        }
+        .card {
+          /* Add shadows to create the "card" effect */
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+        }
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .form-group .form-control {
+            padding: 10;
+        }
+    </style>
+</head>
+<!--<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #238a44">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">Home</a>
+    </div>
+</nav>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+                aria-controls="navbarRightAlignExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-mdb-target="#navbarRightAlignExample"
+                data-mdb-toggle="collapse"
+                type="button"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="{% url 'index' %}"><strong>Home</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'add_project' %}">Add Project</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<body>
+<div class="container">
+
+    {% block 'body' %}
+    {% endblock %}
+</div>
+</body>
+</html>

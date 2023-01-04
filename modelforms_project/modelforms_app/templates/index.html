@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block 'body' %}
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">List Projects</h5>
+                    <p class="card-text">Checkout existing projects list</p>
+                    <a class="btn btn-primary" href="{% url 'list_projects' %}">Check Project List</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Create Project</h5>
+                    <p class="card-text">Create new project if not listed</p>
+                    <a class="btn btn-primary" href="{% url 'add_project' %}">Create New Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
