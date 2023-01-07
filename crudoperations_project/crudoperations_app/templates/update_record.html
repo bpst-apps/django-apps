@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block 'body' %}
+{% load widget_tweaks %}
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Add Student Record
+        </div>
+        {% if student_info %}
+        <div class="card-body d-flex justify-content-center align-items-center">
+            <form method="post">
+                {% csrf_token %}
+                First Name: <input name="first_name" type="text" value="{{ student_info.first_name }}">
+                Last Name: <input name="last_name" type="text" value="{{ student_info.last_name }}">
+                Test Score: <input name="test_score" type="text" value="{{ student_info.test_score }}">
+                <hr>
+                <input type="submit" value="Update Record" class="btn btn-primary mx-auto d-block text-center">
+            </form>
+        </div>
+        {% else %}
+        <div class="card-footer text-muted">
+            Error while loading the student score details !!!
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}
