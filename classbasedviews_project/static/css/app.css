@@ -1,0 +1,33 @@
+.container {
+  width: 80%; /* Set the width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding-top: 200px; /* Add padding to the top of the container */
+}
+
+.navbar {
+  padding-bottom: 20px; /* Add padding to the bottom of the navbar */
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.table {
+    text-align: center;
+}
+
+.card-header {
+  font-family: 50px Arial, sans-serif;; /* Set the font to Arial */
+  color: blue; /* Set the text color to red */
+  font-weight: bold; /* Make the text bold */
+  text-align: center;
+}
+
+.card-footer {
+    font-style: italic; /* Make the text italic */
+}
+
+.form-group {
+    padding-top: 5px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+}
